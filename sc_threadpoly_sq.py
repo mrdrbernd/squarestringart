@@ -9,9 +9,9 @@
 import sys
 import cv2
 import numpy as np
-from tkinter import filedialog
+#from tkinter import filedialog    # optional
 
-imgPath="./J.jpg"
+imgPath="./BILD.jpg"    # 
 #imgPath=""
 # image file for threading
 
@@ -144,8 +144,8 @@ print(banner)
 
 
 # Load image; open file dialog if no image is given
-if imgPath=="":
-    imgPath=filedialog.askopenfilename()
+#if imgPath=="":
+#    imgPath=filedialog.askopenfilename()
 
 image = cv2.imread(imgPath)
 height, width = image.shape[0:2]
